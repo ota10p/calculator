@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-family: 'Nunito', sans-serif;
+}
+
+.calc_body {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #212121;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	width: 90%;
+	max-width: 400px;
+}
+
+.calc_area {
+	background-color: #fafafa;
+	color: #212121;
+	border-radius: 8px 8px 0 0;
+	padding: 1.2rem;
+	font-size: 2.5rem;
+	text-align: right;
+}
+
+.buttons {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas:
+		"allclear clear percent divide"
+		"seven    eight nine    multiplication"
+		"four     five  six     minus"
+		"one      two   three   plus"
+		"zero     zero  point   equal";
+}
+
+.btn[data-number='AC'] {
+	grid-area: allclear;
+}
+
+.btn[data-number='C'] {
+	grid-area: clear;
+}
+
+.btn[data-number='%'] {
+	grid-area: percent;
+}
+
+.btn[data-number='/'] {
+	grid-area: divide;
+}
+
+.btn[data-number='7'] {
+	grid-area: seven;
+}
+
+.btn[data-number='8'] {
+	grid-area: eight;
+}
+
+.btn[data-number='9'] {
+	grid-area: nine;
+}
+
+.btn[data-number='*'] {
+	grid-area: multiplication;
+}
+
+.btn[data-number='4'] {
+	grid-area: four;
+}
+
+.btn[data-number='5'] {
+	grid-area: five;
+}
+
+.btn[data-number='6'] {
+	grid-area: six;
+}
+
+.btn[data-number='-'] {
+	grid-area: minus;
+}
+
+.btn[data-number='1'] {
+	grid-area: one;
+}
+
+.btn[data-number='2'] {
+	grid-area: two;
+}
+
+.btn[data-number='3'] {
+	grid-area: three;
+}
+
+.btn[data-number='+'] {
+	grid-area: plus;
+}
+
+.btn[data-number='0'] {
+	grid-area: zero;
+	border-radius: 0 0 0 8px;
+}
+
+.btn[data-number='.'] {
+	grid-area: point;
+}
+
+.btn[data-number='='] {
+	grid-area: equal;
+}
+
+.buttons .btn {
+	display: block;
+	border: none;
+	appearance: none;
+	cursor: pointer;
+	padding: 1.6rem 1.5rem;
+	font-size: 1.5rem;
+	background-color: #212121;
+	color: #fafafa;
+	text-align: center;
+	transition: .4s all linear;
+}
+
+.btn.active{
+	color: #212121;
+	background-color: #fafafa;
+}
+
+@media (hover: hover) {
+	.buttons .btn:hover {
+		background-color: #757272;
+	}
+	.buttons .btn:active {
+		background-color: #f7efef;
+	}
+}
+
+@media (hover: none) {
+	.buttons .btn:active {
+		background-color: #757272;
+		transition: .1s all linear;
+	}
+}

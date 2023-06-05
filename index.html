@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="expires" content="604800" />
+    <title>JavaScript電卓アプリ</title>
+    <link rel="stylesheet" media="screen" href="main.css" />
+    <script src="./dist/app.js" defer></script>
+  </head>
+  <body>
+    <div class="calc_body">
+      <div class="calc_area">
+        <p id="result" class="result">0</p>
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="btn js-btn-operator" data-operator="AC">
+          AC
+        </button>
+        <button type="button" class="btn js-btn-operator" data-operator="C">
+          C
+        </button>
+        <button type="button" class="btn js-btn-operator" data-operator="%">
+          &#037;
+        </button>
+        <button type="button" class="btn js-btn-operator" data-operator="/">
+          &#247;
+        </button>
+
+        <button type="button" class="btn js-btn-number" data-number="7">
+          7
+        </button>
+        <button type="button" class="btn js-btn-number" data-number="8">
+          8
+        </button>
+        <button type="button" class="btn js-btn-number" data-number="9">
+          9
+        </button>
+        <button type="button" class="btn js-btn-operator" data-operator="*">
+          &#215;
+        </button>
+
+        <button type="button" class="btn js-btn-number" data-number="4">
+          4
+        </button>
+        <button type="button" class="btn js-btn-number" data-number="5">
+          5
+        </button>
+        <button type="button" class="btn js-btn-number" data-number="6">
+          6
+        </button>
+        <button type="button" class="btn js-btn-operator" data-operator="-">
+          &#150;
+        </button>
+
+        <button type="button" class="btn js-btn-number" data-number="1">
+          1
+        </button>
+        <button type="button" class="btn js-btn-number" data-number="2">
+          2
+        </button>
+        <button type="button" class="btn js-btn-number" data-number="3">
+          3
+        </button>
+        <button type="button" class="btn js-btn-operator" data-operator="+">
+          &#043;
+        </button>
+
+        <button type="button" class="btn js-btn-number" data-number="0">
+          0
+        </button>
+        <button type="button" class="btn js-btn-number" data-number=".">
+          &#046;
+        </button>
+        <button type="button" class="btn js-btn-operator" data-operator="=">
+          &#061;
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
