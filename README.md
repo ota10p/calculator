@@ -2,7 +2,8 @@
 
 iPhone 計算機アプリを模倣したオリジナル計算機アプリです。  
 ボタンの位置や挙動が同じになるようにしました。  
-レスポンシブ対応をしているのでスマホでも利用可能です。
+レスポンシブ対応をしているのでスマホでも利用可能です。  
+URL:https://ota10p.github.io/calculator/  
 
 <img width="517" alt="スクリーンショット 2023-06-20 1 33 00" src="https://github.com/ota10p/calculator/assets/135662234/c1bf16f0-1236-4708-9139-9003992d0ce0">
 <img width="547" alt="スクリーンショット 2023-06-20 12 18 57" src="https://github.com/ota10p/calculator/assets/135662234/42829b49-d73d-407f-8565-19cd508ef175">
