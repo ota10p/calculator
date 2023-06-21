@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tatata53531010/calculator.git"
+    "url": "git+https://github.com/ota10p/calculator.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tatata53531010/calculator/issues"
+    "url": "https://github.com/ota10p/calculator/issues"
   },
-  "homepage": "https://github.com/tatata53531010/calculator#readme",
+  "homepage": "https://github.com/ota10p/calculator#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
   }
